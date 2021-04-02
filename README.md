@@ -12,6 +12,18 @@ Hello! I've created Part-To-Lua as a way to convert builds into Lua code.
 
 [Download today!](https://www.roblox.com/library/6598834514/Part-To-Lua)
 
+## Saves Values
+* Name
+* Position
+* Size
+* Color
+* Material
+* Transparency
+* Reflectance
+* Anchored
+* CanCollide
+* Locked
+
 ## Use Cases
 
 * Unlock areas of the map as the player progresses
