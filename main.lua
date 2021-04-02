@@ -7,14 +7,14 @@ local NewButton = toolbar:CreateButton("Convert", "Convert now!", "rbxassetid://
 
 NewButton.Click:Connect(function()
 	local tbl = Selection:Get()
-	local properties = {"Name", "Position", "Size", "Color", "Material", "Transparency", "Reflectance", "Anchored", "CanCollide", "Locked"}
+	local properties = {"Name", "Position", "Orientation", "Size", "Color", "Material", "Transparency", "Reflectance", "Anchored", "CanCollide", "Locked"}
 	local s = Instance.new("Script", game.Workspace)
 	
 	for i, part in ipairs(tbl) do
 		local newContent = ""
 		newContent = newContent .. ("local part"..i.. " = Instance.new('Part', game.Workspace)".."\n")
 		for _, v in ipairs(properties) do
-			if v == "Position" or v == "Size" then
+			if v == "Position" or v == "Size" or v == "Orientation" then
 				local vector = part[v]
 				newContent = newContent .. ("part"..i.."."..v.." = Vector3.new("..vector.X..", "..vector.Y..", "..vector.Z..")".."\n")
 			elseif v == "Color" then
