@@ -16,6 +16,7 @@ Hello! I've created Part-To-Lua as a way to convert builds into Lua code.
 * Name
 * Position
 * Size
+* Orientation
 * Color
 * Material
 * Transparency
